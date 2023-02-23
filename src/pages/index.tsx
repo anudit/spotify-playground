@@ -9,7 +9,7 @@ import { SpotifyLogo } from 'components/icons';
 
 export default function App() {
   const CLIENT_ID = process.env.NEXT_PUBLIC_CLIENT_ID;
-  const REDIRECT_URI = "http://localhost:3000"
+  const REDIRECT_URI = process.env.REDIRECT_URI;
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
   const RESPONSE_TYPE = "token"
   const SCOPES = ["streaming", "user-modify-playback-state", "user-read-private", "user-read-email", "user-read-playback-state", "user-read-currently-playing"]
