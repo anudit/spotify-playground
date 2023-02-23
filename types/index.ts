@@ -10,6 +10,7 @@ export interface SpotifyData {
       external_urls: {
         spotify: string;
       };
+      uri: string,
     };
     currently_playing_type: string;
 }
